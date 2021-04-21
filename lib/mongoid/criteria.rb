@@ -63,6 +63,10 @@ module Mongoid
       entries == other
     end
 
+    def self.model_name
+      name
+    end
+
     # Finds one or many documents given the provided _id values, or filters
     # the documents in the current scope in the application process space
     # after loading them if needed.
